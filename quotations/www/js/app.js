@@ -50,6 +50,45 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
+   .state('tab.quotqtions', {
+    url: '/quotations',
+    views: {
+      'tab-quotations': {
+        templateUrl: 'templates/tab-quotations.html',
+        controller: 'DashCtrl'
+      }
+    }
+  })
+
+    .state('tab.author', {
+    url: '/author',
+    views: {
+      'tab-author': {
+        templateUrl: 'templates/tab-author.html',
+        controller: 'DashCtrl'
+      }
+    }
+  })
+
+     .state('tab.gallery', {
+    url: '/gallery',
+    views: {
+      'tab-gallery': {
+        templateUrl: 'templates/tab-gallery.html',
+        controller: 'DashCtrl'
+      }
+    }
+  })
+
+ .state('tab.mood', {
+    url: '/mood',
+    views: {
+      'tab-mood': {
+        templateUrl: 'templates/tab-mood.html',
+        controller: 'DashCtrl'
+      }
+    }
+  })
   .state('tab.test', {
       url: '/test',
       views: {
