@@ -1,3 +1,4 @@
+
 module.controller('ThisCtrl', function($cordovaEmailComposer) {
 
  $cordovaEmailComposer.isAvailable().then(function() {

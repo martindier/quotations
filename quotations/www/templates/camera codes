@@ -2,6 +2,8 @@ Examples
 
 Retrieve photo as a base64-encoded image
 
+<script>
+
 module.controller('PictureCtrl', function($scope, $cordovaCamera) {
 
   document.addEventListener("deviceready", function () {
@@ -51,3 +53,4 @@ module.controller('PictureCtrl', function($scope, $cordovaCamera) {
 
   }, false);
 });
+</script>
