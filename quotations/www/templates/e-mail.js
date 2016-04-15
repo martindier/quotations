@@ -1,5 +1,6 @@
 
-module.controller('ThisCtrl', function($cordovaEmailComposer) {
+var email=function(){
+  module.controller('ThisCtrl', function($cordovaEmailComposer) {
 
  $cordovaEmailComposer.isAvailable().then(function() {
    // is available
@@ -26,3 +27,4 @@ module.controller('ThisCtrl', function($cordovaEmailComposer) {
    // user cancelled email
  });
 });
+}

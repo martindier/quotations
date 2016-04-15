@@ -1,96 +1,42 @@
+<!-- unexpected token errors
+getPic not defined.....it is in getimage.js
+testText not defined ....it is below
+is there a bug fix programme
+have tried calling functions inside and outside the ion tags -->
+
 <ion-view view-title="Gallery">
-
-  <ion-content class="padding">
-    <h2>Welcome to Quotations App 2.1.0</h2>
-    <p>
-   Gallery
-    </p>
-    <button class="button button-positive">
-  Mood
-</button>
-
-<button class="button button-calm">
-  Get Image
-</button>
-
-<button class="button button-balanced">
-  Get Text
-</button>
-
-<button class="button button-energized">
- Mail to
-</button>
-
-<button class="button button-assertive">
-  button-assertive
-</button>
-
-<button class="button button-royal">
-  button-royal
-</button>
-
-<script>
-ionic plugin add cordova-plugin-camera
- .factory('ImageService', function($cordovaCamera, $q, $log) {
-
-    function optionsForType(type, quality, targetSize) {
-      var source;
-      switch (type) {
-        case 0:
-          source = Camera.PictureSourceType.CAMERA;
-          break;
-        case 1:
-          source = Camera.PictureSourceType.PHOTOLIBRARY;
-          break;
-      }
-      return {
-        quality: quality, // e.g. 75,
-        destinationType: Camera.DestinationType.FILE_URI,
-        sourceType: source,
-        allowEdit: false, //true,
-        encodingType: Camera.EncodingType.JPEG,
-        popoverOptions: CameraPopoverOptions,
-        saveToPhotoAlbum: true,  //false,
-        targetWidth: targetSize,  // e.g. 500,
-        targetHeight: targetSize, // e.g. 500,
-        correctOrientation: true  // SEE: simonmacdonald.blogspot.ca/2012/07/change-to-camera-code-in-phonegap-190.html
-      };
-    }
-
-    var getPicture = function (type, quality, targetSize) {
-      return $q(function (resolve, reject) {
-        var options = optionsForType(type, quality, targetSize);
-
-        $cordovaCamera.getPicture(options).then(function (imageUrl) {
-
-          $log.debug('ImageService#getPicture, $cordovaCamera.getPicture imageUrl = ' + imageUrl);
-
-          resolve(imageUrl);
-
-        }, function (error) {
-          $log.debug('ImageService#getPicture, $cordovaCamera.getPicture error = ' + JSON.stringify(error));
-
-          reject(error);
-        });
-
-      });
-    };
-
-    var cleanup = function () {
-      // Cleanup temp files from the camera's picture taking process. Only needed for Camera.DestinationType.FILE_URI.
-      // Returns a promise the result of which is probably ignored.
-      return $cordovaCamera.cleanup();
-    };
-
-    return {
-      getPicture: getPicture,
-      cleanup: cleanup
-    };
-  });
-</script>
-
-
-<!-- <div class="list">
+    <ion-panel>
+        <ion-content class="padding">
+            <h2>Welcome to Gallery in Quotations App 2.2.0</h2>
+            <script>
+            function testText() {
+                document.getElementById("demo").innerHTML = ("Hello World");
+            }
+            </script>
+            <button class="button button-balanced" onclick="getPic()">Test to Get Picture </button>
+            <button class="button button-balanced" onclick="testText()">Test to change text </button>
+            <p id="demo"></p>
+            <button class="button button-balanced" onclick=alert( "button pressed");>Test to call alert box </button>
+            <div class="buttons">
+                <ul>
+                    <li>
+                        <button class="button button-calm" onclick=alert("Button pressed");> click me </button>
+                    </li>
+                    <li>
+                        <button class="button button-balanced" onclick="getPic()">Get Picture </button>
+                    </li>
+                    <li>
+                        <button class="button button-energized" onclick="email()">Mail to </button>
+                    </li>
+                    <li>
+                        <button class="button button-assertive" onclick=alert("button pressed");>button-assertive</button>
+                    </li>
+                    <li>
+                        <button class="button button-royal" onclick=alert("button pressed");>button-royal </button>
+                    </li>
+                </ul>
+            </div>
+            <!-- <div class="list">
   <label class="item item-input item-stacked-label">
     <span class="input-label">First Name</span>
     <input type="text" placeholder="John">
@@ -111,7 +57,6 @@ ionic plugin add cordova-plugin-camera
   Submit
 </button>
 </div> -->
-
- 
-  </ion-content>
+        </ion-content>
+    </ion-panel>
 </ion-view>
