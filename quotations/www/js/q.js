@@ -47,12 +47,12 @@ var q= [
 ["They say that God is everywhere, and yet we always think of Him as somewhat of a recluse","Emily Dickinson","happy"],
 ["We turn not older with years, but newer every day","Emily Dickinson","happy"],
 ["A little Madness in the Spring Is wholesome even for the King","Emily Dickinson","reflective"],
-["Carpe Diem - sieze the day","Annon","positive"];
+["Carpe Diem - sieze the day","Annon","positive"],
 ["It is our light, not our darkness that most frightens us. We ask ourselves, 'Who am I to be brilliant, gorgeous, talented, fabulous?' Actually, who are you not to be? You are a child of God. Your playing small does not serve the world. There is nothing enlightened about shrinking so that other people won't feel insecure around you. We are all meant to shine","Marianne Wiliamson","positive"],
 ["as we let our own light shine, we unconsciously give other people permission to do the same. As we are liberated from our own fear, our presence automatically liberates others.","Marianne Wiliamson","positive"],
-["The snow goose need do nothing but be itself","Annon","reflective"];
+["The snow goose need do nothing but be itself","Annon","reflective"],
 ["Everything we do is infused with the energy with which we do it. If we're frantic, life will be frantic. If we're peaceful, life will be peaceful. And so our goal in any situation becomes inner peace.","Marianne Wiliamson","positive"],
-["In every community, there is work to be done. In every nation, there are wounds to heal. In every heart, there is the power to do it","Marianne Wiliamson","positive"];
+["In every community, there is work to be done. In every nation, there are wounds to heal. In every heart, there is the power to do it","Marianne Wiliamson","positive"],
 ["Just like a sunbeam can't separate itself from the sun, and a wave can't separate itself from the ocean, we can't separate ourselves from one another. We are all part of a vast sea of love, one indivisible divine mind","Marianne Wiliamson","positive"],
 ["Our prime purpose in this life is to help others. And if you can’t help them, at least don’t hurt them.","Dalai Lama","positive"]
 ["If you think you are too small to make a difference, try sleeping with a mosquito ","Dalai Lama","positive"],
@@ -75,12 +75,15 @@ var q= [
 ["For death is but a passing phase of Life, A change of dress, a disrobing; A birth into the unborn again; A commencing where we ended; A starting where we stopped to rest; A crossroad of Eternity; A giving up of something, to possess all things.The end of the unreal, the beginning of the real", "Edwin Leibfreed", "reflective"]
 ];
 
+
+function getRandomQuote() {
 // Random shuffle items
-q.sort(function() {return 0.5 - Math.random()})
+q.sort(function() {return 0.5 - Math.random()});
 // Get third item in randomised array
-var item = x[2]   
-console.log (q.length);
+var item = q[2];   
+
     console.log(q[2]);
     console.log("item");
-      alert(q.length);
-      alert(q[2])
+  
+      alert(q[2]);
+}

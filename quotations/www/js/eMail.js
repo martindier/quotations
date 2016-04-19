@@ -1,5 +1,5 @@
 
-var email=function(){
+var e_Mail=function(){
   module.controller('ThisCtrl', function($cordovaEmailComposer) {
 
  $cordovaEmailComposer.isAvailable().then(function() {
