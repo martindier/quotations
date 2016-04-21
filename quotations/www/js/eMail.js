@@ -1,3 +1,14 @@
+// replace this with js not the angular below....go to gerards second link and click email......then copy and paste relevant section s of code
+
+
+// var e_Mail=function(){cordova.plugins.email.open({
+//     to:      'max@mustermann.de',
+//     subject: 'Greetings',
+//     body:    '<h1>Nice greetings from Leipzig</h1>',
+//     isHtml:  true
+// });}
+
+
 
 var e_Mail=function(){
   module.controller('ThisCtrl', function($cordovaEmailComposer) {
