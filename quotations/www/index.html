@@ -26,6 +26,14 @@
      <script src="js/eMail.js"></script>
     <script src="plugins/cordova-plugin-email-composer/www/email-composer.js"></script> 
      <script src="js/q.js"></script>
+     <script>document.addEventListener('deviceready', function () {
+    // cordova.plugins.email is now available
+}, false);</script>
+
+<script>document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
+    console.log(navigator.camera);
+}</script>
   </head>
   <body ng-app="starter">
     <!--

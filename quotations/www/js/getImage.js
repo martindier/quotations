@@ -1,23 +1,25 @@
-
-var getPic=function(){
-  
+document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
+    console.log(navigator.camera);
 }
 
+navigator.camera.getPicture(cameraSuccess, cameraError, cameraOptions);
 
-// var getPic=function() {tPictures(
-//     function(results) {
-//       for (var i = 0; i < results.length; i++) {
-//         console.log('Image URI: ' + results[i]);
-//       }
-//     }, function (error) {
-//       console.log('Error: ' + error);
-//     }, {
-//       maximumImagesCount: 10,
-//       width: 800
-//     }
-//   );
-// }
-//   window.imagePicker.ge
+
+function getImage(){getPictures(
+    function(results) {
+      for (var i = 0; i < results.length; i++) {
+        console.log('Image URI: ' + results[i]);
+      }
+    }, function (error) {
+      console.log('Error: ' + error);
+    }, {
+      maximumImagesCount: 10,
+      width: 800
+    }
+  );
+}
+  window.imagePicker.ge
 
 
 
