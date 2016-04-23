@@ -2,8 +2,10 @@ document.addEventListener('deviceready', function () {
     // cordova.plugins.email is now available
 }, false);
 
+//might need to change line below to     cordova.plugins.email.open({ 
+
 function open (){
-      cordova.plugins.email.open({
+      quotations.plugins.cordova-plugin-email-composer.www.email_composer.open({
     to:      'martin.dier@gmail.com',
     cc:      '',
     bcc:     [''],

@@ -82,8 +82,8 @@ q.sort(function() {return 0.5 - Math.random()});
 // Get third item in randomised array
 var item = q[2];   
 
-    console.log(q[2]);
-    console.log("item");
+    
+    console.log(item);
   
       alert(q[2]);
 }
