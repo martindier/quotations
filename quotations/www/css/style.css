@@ -1,19 +1,31 @@
 /*-- body or background-can i use THIS or varient on this: "$("a[target='imgStr']")"); */
 
-#body {
+.backgroundImgx {
     /*width:305px;
-    height:312px;*/
+    height:312px;*/ 
     background-size: cover;
-    background-image: url (imgStr);   
-    background-repeat: no-repeat;
+    background-image: url ("img/aurora.jpg");   
+    /*background-repeat: no-repeat;
     background-position: right top;
     margin-right: 20px;
-    background-attachment: fixed;
-    background-color:cccccc;
+    background-attachment: fixed; 
+    background-color:cccccc; Is there analternative line ofcss codeing that makes the background white? if so where??*/
+}
+.backgroundImg{
+    text-align: center;
+                color: red;
+                background-size: cover;
+                background-image: url("img/aurora.jpg");
+                float: right;
 }
 
-text {
-	float: left;
+
+
+
+
+.text {
+	float: right;
+	color: green;
 }
 
 /*You can set the image as the background to a div, then use the css background-size property

@@ -1,5 +1,4 @@
 var q= [
-["lorum ipsum dolar", "Gerard", "funny"],
 ["Light travels faster than sound. This is why some people appear bright until they speak","Steven Wright","sarcasm"],
 ["Mirrors can’t talk, lucky for you they can’t laugh either","Annon","sacrasm"],
 ["Violence won’t solve anything…But it sure makes me feel good","Annon","sarcasm"],
@@ -81,9 +80,19 @@ function getRandomQuote() {
 q.sort(function() {return 0.5 - Math.random()});
 // Get third item in randomised array
 var item = q[2];   
+console.log(item);
 
-    
-    console.log(item);
-  
-      alert(q[2]);
+
+var itemQuote=(q[2] [0]);
+console.log(itemQuote)
+
+    var itemAuthor = (q[2] [1]); 
+    console.log(itemAuthor);
+
+    var itemMood=(q[2] [2]);
+    console.log(itemMood);
+
+
+         alert(q[2] [0] [1]);
+         
 }

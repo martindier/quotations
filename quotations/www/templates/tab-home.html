@@ -1,68 +1,91 @@
-
-
-
 <ion-view view-title="Home">
-  <ion-content class="padding">
+    <!-- do these tags need a closing tag at end of document or anywhere else? -->
+    <ion-content class="padding">
+        <div class=backgroundImg>
+            <ul>
+                <li>
+                    <button class="button button-calm" onclick=alert( "TestTextInAlertBox");>some function</button>
+                </li>
+                <li>
+                    <button class="button button-balanced" onclick="getRandomImage()">Get Picture </button>
+                </li>
+                <li>
+                    <button class="button button-energized" onclick="open()">Mail to: </button>
+                </li>
+                <li>
+                    <button class="button button-assertive" onclick="getRandomQuote()">Random Quote</button>
+                </li>
+                <li>
+                    <button class="button button-royal" onclick=alert( "getPics")>By Mood </button>
+                </li>
+            </ul>
+            <style>
+            .paraFirst,  {
+                text-align: center;
+                color: red;
+                background-size: cover;
+                background-image: url("img/aurora.jpg");
+                float: right;
+            }
+            </style>
+            <p class="paraFirst">This text to be replaced by default quote to model container </br>Annon</p>
+            <p class="text">This is a second test paragraph</p>
+            <p>Third para no styling</p>
+            <div class="list">
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Author</span>
+                   <!--  var author=inputAuthor -->
+                    <input type="text" placeholder="Anonymous">
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Mood</span>
+                    <input type="text" placeholder="Inspirational">
+                    <!-- var mood=inputMood -->
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Type in your quote</span>
+                   <!--  var quote=inputQuote -->
+                   <input type="text" placeholder="The quuick brown fox jumped over the lazy dogs.">
+                </label>
+                <button class="button button-block button-positive">
+                    Submit
+                    
+                   <!--  want to store new data permenantly in q -->
+                    var newQuotation=inputAuthor+inputMood+inputQuote
+                    onclick=q.push ("newQuotation");</button>
 
-   
-<ul>
-    <li>
-        <button class="button button-calm" onclick=alert("TestTextInAlertBox");>some function</button>
-    </li>
-    <li>
-        
-       <button class="button button-balanced" onclick="getRandomImage()">Get Picture </button>
-    </li>
-    
-    <li>        
-    <button class="button button-energized" onclick="open()">Mail to: </button>
-    </li>
-    <li>
-         <button class="button button-assertive" onclick="getRandomQuote()">Random Quote</button>
-    </li>
-    <li>
-    <button class="button button-royal" onclick=alert("getPics")>By Mood </button>
-    </li>
-</ul>
-<!-- Open container-->
-<style>
-.paraFirst{text-align: center;
-  color: red;
- 
-   background-size: cover;
-    background-image: url("img/aurora.jpg");
-    float:right;
-    }
-</style>
-
-<p class="paraFirst">This text to be replaced by default quote to model container </br>Annon</p>
+                    var o={
+                    quote="inputQuote", author="inputAuthor", mood="inputMood"
+                    }
+                    
+                    localStorage.setItem("myObject",o;
+                    console.log(localStorage.getItem("myObject"));
+                    JSON.stringify(o);
+                    JSON:
+                    {"quote":"inputquote","author":"inputAuthor","mood":"inputMood"}
+                
+            </div>
+            <!--close class list div -->
+            <div class="list card">
 
 
+  <div class="item item-body">
+    <img class="full-image" src="img/aurora.jpg">
+    document.write(getRandomQuote);
+    <p>
+      This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
+      the content is from a card-body consisting of an image and paragraph text. The footer
+      consists of tabs, icons aligned left, within the card-footer.
+    </p>
+    <p>
+      <a href="#" class="subdued">Mail to:</a>
+      <a href="#" class="subdued">Go again</a>
+    </p>
+  </div>
 
+</div>
 
-
-
-<div class="list">
-  <label class="item item-input item-stacked-label">
-    <span class="input-label">Author</span>
-    <input type="text" placeholder="Anonymous">
-  </label>
-  <label class="item item-input item-stacked-label">
-    <span class="input-label">Mood</span>
-    <input type="text" placeholder="Inspirational">
-  </label>
- 
-  <label class="item item-input item-stacked-label">
-    <span class="input-label">Type in your quote</span>
-    <input type="text" placeholder="The quuick brown fox jumped over the lazy dogs.">
-  </label>
-  <button class="button button-block button-positive">
-  Submit
-</button>
-</div> 
-
-
-
-
-  </ion-content>
+        </div>
+        <!-- close background image div -->
+    </ion-content>
 </ion-view>
