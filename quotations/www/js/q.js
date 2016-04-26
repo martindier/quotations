@@ -93,6 +93,30 @@ console.log(itemQuote)
     console.log(itemMood);
 
 
-         alert(q[2] [0] [1]);
+         alert(q[2] [0]);
          
 }
+
+
+                    function setText(theForm){
+                    	console.log("the data was submitted to q.js but not stored "+document.forms["myForm"]["author"].value);
+                    }
+
+
+
+
+
+ /*  want to store new data permenantly in q 
+                    var newQuotation=inputAuthor+inputMood+inputQuote
+                    onclick=q.push ("newQuotation");</button>
+
+                    var o={
+                    quote="inputQuote", author="inputAuthor", mood="inputMood"
+                    }
+                    
+                    localStorage.setItem("myObject",o;
+                    console.log(localStorage.getItem("myObject"));
+                    JSON.stringify(o);
+                    JSON:
+                    {"quote":"inputquote","author":"inputAuthor","mood":"inputMood"}
+                    */

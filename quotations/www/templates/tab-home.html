@@ -20,7 +20,7 @@
                 </li>
             </ul>
             <style>
-            .paraFirst,  {
+            .paraFirst {
                 text-align: center;
                 color: red;
                 background-size: cover;
@@ -31,60 +31,40 @@
             <p class="paraFirst">This text to be replaced by default quote to model container </br>Annon</p>
             <p class="text">This is a second test paragraph</p>
             <p>Third para no styling</p>
-            <div class="list">
-                <label class="item item-input item-stacked-label">
-                    <span class="input-label">Author</span>
-                   <!--  var author=inputAuthor -->
-                    <input type="text" placeholder="Anonymous">
-                </label>
-                <label class="item item-input item-stacked-label">
-                    <span class="input-label">Mood</span>
-                    <input type="text" placeholder="Inspirational">
-                    <!-- var mood=inputMood -->
-                </label>
-                <label class="item item-input item-stacked-label">
-                    <span class="input-label">Type in your quote</span>
-                   <!--  var quote=inputQuote -->
-                   <input type="text" placeholder="The quuick brown fox jumped over the lazy dogs.">
-                </label>
-                <button class="button button-block button-positive">
-                    Submit
-                    
-                   <!--  want to store new data permenantly in q -->
-                    var newQuotation=inputAuthor+inputMood+inputQuote
-                    onclick=q.push ("newQuotation");</button>
+            
+            <form role="form" name="myForm" onsubmit="return setText()">
+                <fieldset>
+                    <div class="list">
+                        <label for="author" class="item item-input item-stacked-label">
+                            <span class="input-label">Author</span>
+                            <input name="author" required type="text" placeholder="Anonymous">
+                        </label>
+                        <label for="mood" class="item item-input item-stacked-label">
+                            <span class="input-label">Mood</span>
+                            <input name="mood" type="text" placeholder="Inspirational">
+                       </label>
+                        <label for="quote" class="item item-input item-stacked-label">
+                            <span class="input-label">Type in your quote</span>
+                            <input name="quote" type="text" placeholder="The quuick brown fox jumped over the lazy dogs.">
+                        </label>
+                        <button class="button button-block button-positive" type="submit">Submit</button>
+                    </div><!--close class list div -->
+                </fieldset>
+            </form>
 
-                    var o={
-                    quote="inputQuote", author="inputAuthor", mood="inputMood"
-                    }
-                    
-                    localStorage.setItem("myObject",o;
-                    console.log(localStorage.getItem("myObject"));
-                    JSON.stringify(o);
-                    JSON:
-                    {"quote":"inputquote","author":"inputAuthor","mood":"inputMood"}
-                
-            </div>
-            <!--close class list div -->
+
             <div class="list card">
-
-
-  <div class="item item-body">
-    <img class="full-image" src="img/aurora.jpg">
-    document.write(getRandomQuote);
-    <p>
-      This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
-      the content is from a card-body consisting of an image and paragraph text. The footer
-      consists of tabs, icons aligned left, within the card-footer.
-    </p>
-    <p>
-      <a href="#" class="subdued">Mail to:</a>
-      <a href="#" class="subdued">Go again</a>
-    </p>
-  </div>
-
-</div>
-
+                <div class="item item-body">
+                    <img class="full-image" src="img/aurora.jpg"> document.write(getRandomQuote);
+                    <p>
+                        This is a "Facebook" styled Card. The header is created from a Thumbnail List item, the content is from a card-body consisting of an image and paragraph text. The footer consists of tabs, icons aligned left, within the card-footer.
+                    </p>
+                    <p>
+                        <a href="#" class="subdued">Mail to:</a>
+                        <a href="#" class="subdued">Go again</a>
+                    </p>
+                </div>
+            </div>
         </div>
         <!-- close background image div -->
     </ion-content>
