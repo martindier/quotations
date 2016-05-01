@@ -1,42 +1,32 @@
 /*-- body or background-can i use THIS or varient on this: "$("a[target='imgStr']")"); */
 
-.backgroundImgx {
+.backgroundImg {
     /*width:305px;
     height:312px;*/ 
-    background-size: cover;
-    background-image: url ("img/aurora.jpg");   
-    /*background-repeat: no-repeat;
+    background-image:url("img/aurora.jpg");
+    background-size:cover;
+      /*background-repeat: no-repeat;
     background-position: right top;
     margin-right: 20px;
     background-attachment: fixed; 
-    background-color:cccccc; Is there analternative line ofcss codeing that makes the background white? if so where??*/
+    background-color:cccccc; */
 }
-.backgroundImg{
-    text-align: center;
-                color: red;
+
+
+
+/*  .paraFirst {
+                text-align: center;
+                color: blue;
                 background-size: cover;
                 background-image: url("img/aurora.jpg");
                 float: right;
-}
-
+            }
 
 
 
 
 .text {
-	float: right;
-	color: green;
-}
+	float: left;
+	color: green;}*/
 
-/*You can set the image as the background to a div, then use the css background-size property
 
-background-size: cover;
-and it will "Scale the background image to be as large as possible so that the background area is completely covered by the background image. 
-Make it simple!
-
-Give the container a fixed height and then for the img tag inside it set width and max-height.
-
-<div style="height: 250px">
-     <img src="..." alt=" " style="width: 100%;max-height: 100%" />
-</div>
-Difference is that you set the width to be 100% not the max-width.*/

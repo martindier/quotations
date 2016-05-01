@@ -99,8 +99,14 @@ console.log(itemQuote)
 
 
                     function setText(theForm){
+                        var newAuthor = document.getElementById("newAuthor").val();
+                        var newQuote = document.getElementById("newQuote").val();
+                        var quote = [newAuthor,newQuote];
+                        q.push(quote);
                     	console.log("the data was submitted to q.js but not stored "+document.forms["myForm"]["author"].value);
                     }
+
+
 
 
 
