@@ -42,8 +42,9 @@ cordova.plugins.email.isAvailable(
 // );
 
 
-function open(){
-  console.log("here1");
+function open123(){
+  console.log("e-mail function is starting to be read");
+
     cordova.plugins.email.open({
       to:      'martin.dier@gmail.com',
       cc:      '',
@@ -51,4 +52,15 @@ function open(){
       subject: 'Great Quotation',
       body:    'I saw this Quotation on my quotations app and thought of you.'
   });
+  console.log("This displays if the e-mail programme reaches the last line");
+}
+
+
+function onSuccess(imageURI) {
+    var image = document.getElementById('myImage');
+    image.src = imageURI;
+}
+
+function onFail(message) {
+    alert('Failed because: ' + message);
 }

@@ -1,67 +1,68 @@
-
 <ion-view view-title="Home">
+    <ion-content class="padding">
+        <img id="bkgimg" src="img/aurora2.jpg" alt="aurora">
+        <!--<style>#backgroundImg { background-color:cccccc;background-size:cover; background-image:url("img/aurora.jpg");}
+            </style>-->
+        <!--  <div class=backgroundImg> -->
+        <!--  <div class="container">
+             <img src="img/water.jpg" alt="Nthrn lights" width="100%">
+               <div  class="center" id="firstQuote">the rain in spain falls <b>mainly</b> on the plane</div>
+            <div> -->
+        <!--   <script>
 
-  <ion-content class="padding">
-   <style>.backgroundImg { background-color:cccccc;background-size:cover; background-image:url("img/aurora.jpg");}
-            </style>
-       <div class="backgroundImg">
-            <ul>
-                <li>
-                    <button class="button button-balanced" onclick="getRandomImage()">Get Picture </button>
-                </li>
-                <li>
-                    <button class="button button-energized" onclick="open()">Mail to: </button>
-                </li>
-                <li>
-                    <button class="button button-assertive" onclick="getRandomQuote()">Random Quote</button>
-                </li>
-                <li>
-                    <button class="button button-royal" onclick=alert( "getPics")>By Mood </button>
-                </li>
-            </ul>
-           
-            <!-- <p>This text to be replaced by default quote to model container </br>Annon</p>
-            <p class="text">This is a second test paragraph</p>
-            <p>Third para no styling</p>
-          
-           <p class="backgroundImg">this is backgroundImg styling</p> -->
-            
-            <form role="form" name="myForm" onsubmit="return setText()">
-                <fieldset>
-                    <div class="list">
-                        <label for="author" class="item item-input item-stacked-label">
-                            <span class="input-label">Author</span>
-                            <input id="newAuthor" name="author" required type="text" placeholder="Anonymous">
-                        </label>
-                        <label for="mood" class="item item-input item-stacked-label">
-                            <span class="input-label">Mood</span>
-                            <input name="mood" type="text" placeholder="Inspirational">
-                       </label>
-                        <label for="quote" class="item item-input item-stacked-label">
-                            <span class="input-label">Type in your quote</span>
-                            <input name="quote" type="text" placeholder="The quuick brown fox jumped over the lazy dogs.">
-                        </label>
-                        <button class="button button-block button-positive" type="submit">Submit</button>
-                    </div> <!--close class list div... -->
-                </fieldset>
-            </form>
-
-
-            <!-- <div class="list card">
-                <div class="item item-body">
-                    <img class="full-image" src="img/aurora.jpg"> document.write(getRandomQuote);
-                    <p>
-                        This is a "Facebook" styled Card. The header is created from a Thumbnail List item, the content is from a card-body consisting of an image and paragraph text. The footer consists of tabs, icons aligned left, within the card-footer.
-                    </p>
-                    <p>
-                        <a href="#" class="subdued">Mail to:</a>
-                        <a href="#" class="subdued">Go again</a>
-                    </p>
-                </div> <!close  div-->
-            <!--</div>close list card div -->
-        <!--</div> close background image div-->
-         </div><!--backgroundImg div-->
-          </div> <!--end of backgroundImg div-->
+              var textPic=document.getElementById('firstQuote').innerHTML=(itemQuote);
+              console.log(textPic);
+                </script> -->
+        <ul>
+            <li>
+                <button class="button button-balanced" onclick="getRandomImage()">Gallery</button>
+            </li>
+            <li>
+                <button class="button button-energized" onclick="open()">Mail to: </button>
+            </li>
+            <li>
+                <button class="button button-assertive" onclick="getRandomQuote()">Random Quote</button>
+            </li>
+            <li>
+                <button class="button button-royal" onclick="getImage()">Camera </button>
+            </li>
+        </ul>
+        <form role="form" name="myForm" onsubmit="return setText()">
+            <fieldset>
+                <div class="list">
+                    <label for="author" class="item item-input item-stacked-label">
+                        <span class="input-label">Author</span>
+                        <input id="inputAuthor" name="inputAuthor" type="text" value="Anonymous">
+                    </label>
+                    <label for="mood" class="item item-input item-stacked-label">
+                        <span class="input-label">Mood</span>
+                        <input id="inputMood" name="inputMood" type="text" value="Inspirational">
+                    </label>
+                    <label for="quote" class="item item-input item-stacked-label">
+                        <span class="input-label">Type in your quote</span>
+                        <input id="inputQuote" name="inputQuote" type="text" value="The quuick brown fox jumped over the lazy dogs.">
+                    </label>
+                    <button class="button button-block button-positive" type="submit">Submit</button>
+                </div>
+                <!--close class list div... -->
+            </fieldset>
+        </form>
+        <div class="list card">
+            <div class="item item-body">
+                <img class="full-image" src="img/aurora2.jpg">
+                <!--Tried to use function and variable to generate a random image here. have left it hard coded to demonstrate intention src=getRandomImage();/ src=imgStr......dont know why it cant see getImage.js-->
+                <p>
+                </p>
+                <p>
+                    <a href="#" class="subdued">Mail To</a>
+                </p>
+                <!-- <document.open>
+    <document.write(itemQuote);>
+        <document.close>
+            </div>
+ -->
+                <!--item-body-->
+            </div>
+            <!--list card -->
     </ion-content>
-   
 </ion-view>

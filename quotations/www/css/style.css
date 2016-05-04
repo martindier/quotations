@@ -1,32 +1,37 @@
 /*-- body or background-can i use THIS or varient on this: "$("a[target='imgStr']")"); */
 
-.backgroundImg {
-    /*width:305px;
-    height:312px;*/ 
+/*.backgroundImg,.bkgimg {
+    
     background-image:url("img/aurora.jpg");
     background-size:cover;
-      /*background-repeat: no-repeat;
-    background-position: right top;
-    margin-right: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
     background-attachment: fixed; 
-    background-color:cccccc; */
+    background-color:cccccc;
+    z-index:2;
+    position:relative;
+}*/
+
+.container {
+    position: relative;
+}
+
+.center {
+    position: relative;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
 }
 
 
-
-/*  .paraFirst {
-                text-align: center;
-                color: blue;
-                background-size: cover;
-                background-image: url("img/aurora.jpg");
-                float: right;
-            }
-
-
-
-
-.text {
-	float: left;
-	color: green;}*/
+img { 
+    background-image: ("img/aurora.jpg");
+    background-size:cover;
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+}
 
 

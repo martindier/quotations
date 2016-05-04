@@ -80,10 +80,10 @@ function getRandomQuote() {
 q.sort(function() {return 0.5 - Math.random()});
 // Get third item in randomised array
 var item = q[2];   
-console.log(item);
 
+//output of quotation to alert box and console......couldnt get text to print over picture
 
-var itemQuote=(q[2] [0]);
+ var itemQuote=(q[2] [0]);
 console.log(itemQuote)
 
     var itemAuthor = (q[2] [1]); 
@@ -93,18 +93,22 @@ console.log(itemQuote)
     console.log(itemMood);
 
 
-         alert(q[2] [0]);
+         alert(itemQuote +" --- "+itemAuthor);
          
 }
 
+//Setup to push the form input into the array
 
                     function setText(theForm){
-                        var newAuthor = document.getElementById("newAuthor").val();
-                        var newQuote = document.getElementById("newQuote").val();
-                        var quote = [newAuthor,newQuote];
-                        q.push(quote);
-                    	console.log("the data was submitted to q.js but not stored "+document.forms["myForm"]["author"].value);
-                    }
+                        var newAuthor = document.getElementById("inputAuthor")//.val();
+                        var newQuote = document.getElementById("inputQuote")//.val();
+                        var newMood=document.getElementById("inputMood")//.val();
+                        var quote = [newQuote,newAuthor,newMood];
+                        q.push(quote)
+                        	// console.log(theForm.[0]+[1]+[2]+quote+"data "+document.forms["theForm"]["inputAuthor"].value);
+                            console.log (quote)
+                            console.log(q)
+}
 
 
 
