@@ -80,11 +80,11 @@ angular.module('starter', ['ionic', 'ngCordova', 'starter.controllers', 'starter
     }
   })
 
- .state('tab.mood', {
-    url: '/mood',
+ .state('tab.settings', {
+    url: '/settings',
     views: {
-      'tab-mood': {
-        templateUrl: 'templates/tab-mood.html',
+      'tab-settings': {
+        templateUrl: 'templates/tab-settings.html',
         controller: 'DashCtrl'
       }
     }

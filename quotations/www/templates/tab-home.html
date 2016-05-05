@@ -27,42 +27,25 @@
                 <button class="button button-royal" onclick="getImage()">Camera </button>
             </li>
         </ul>
-        <form role="form" name="myForm" onsubmit="return setText()">
-            <fieldset>
-                <div class="list">
-                    <label for="author" class="item item-input item-stacked-label">
-                        <span class="input-label">Author</span>
-                        <input id="inputAuthor" name="inputAuthor" type="text" value="Anonymous">
-                    </label>
-                    <label for="mood" class="item item-input item-stacked-label">
-                        <span class="input-label">Mood</span>
-                        <input id="inputMood" name="inputMood" type="text" value="Inspirational">
-                    </label>
-                    <label for="quote" class="item item-input item-stacked-label">
-                        <span class="input-label">Type in your quote</span>
-                        <input id="inputQuote" name="inputQuote" type="text" value="The quuick brown fox jumped over the lazy dogs.">
-                    </label>
-                    <button class="button button-block button-positive" type="submit">Submit</button>
-                </div>
-                <!--close class list div... -->
-            </fieldset>
-        </form>
-        <div class="list card">
+       
+<!-- The card was to be my plan B but it also suffered from the same issues of writing from JavaScript into HTML, have left it intact but commented out
+ -->
+       <!--  <div class="list card"> 
             <div class="item item-body">
-                <img class="full-image" src="img/aurora2.jpg">
+                <img class="full-image" src="img/aurora2.jpg"> -->
                 <!--Tried to use function and variable to generate a random image here. have left it hard coded to demonstrate intention src=getRandomImage();/ src=imgStr......dont know why it cant see getImage.js-->
-                <p>
+               <!--  <p>
                 </p>
                 <p>
                     <a href="#" class="subdued">Mail To</a>
-                </p>
+                </p> -->
                 <!-- <document.open>
     <document.write(itemQuote);>
         <document.close>
             </div>
  -->
                 <!--item-body-->
-            </div>
+           <!--  </div> -->
             <!--list card -->
     </ion-content>
 </ion-view>

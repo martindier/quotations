@@ -74,59 +74,33 @@ var q= [
 ["For death is but a passing phase of Life, A change of dress, a disrobing; A birth into the unborn again; A commencing where we ended; A starting where we stopped to rest; A crossroad of Eternity; A giving up of something, to possess all things.The end of the unreal, the beginning of the real", "Edwin Leibfreed", "reflective"]
 ];
 
+function authorList(){
+for(i=0;i<q.length; i++){
 
-function getRandomQuote() {
-// Random shuffle items
-q.sort(function() {return 0.5 - Math.random();});
-// Get third item in randomised array
-var item = q[2];   
-
-//output of quotation to alert box and console......couldnt get text to print over picture
-
- var itemQuote=(q[2] [0]);
-console.log(itemQuote);
-
-    var itemAuthor = (q[2] [1]); 
-    console.log(itemAuthor);
-
-    var itemMood=(q[2] [2]);
-    console.log(itemMood);
+console.log(q[i][1]);
+}}
 
 
-         alert(itemQuote +" --- "+itemAuthor);
+
+// function getRandomQuote() {
+// // Random shuffle items
+// q.sort(function() {return 0.5 - Math.random();});
+// // Get third item in randomised array
+// var item = q[2];   
+
+// //output of quotation to alert box and console......couldnt get text to print over picture
+
+//  var itemQuote=(q[2] [0]);
+// console.log(itemQuote)
+
+//     var itemAuthor = (q[2] [1]); 
+//     console.log(itemAuthor);
+
+//     var itemMood=(q[2] [2]);
+//     console.log(itemMood);
+
+
+//          alert(itemQuote +" --- "+itemAuthor);
          
-}
+// loop to print out list of authors $("i")[2];
 
-//Setup to push the form input into the array
-
-                    function setText(theForm){
-                        var newAuthor = document.getElementById("inputAuthor")//.val();
-                        var newQuote = document.getElementById("inputQuote")//.val();
-                        var newMood=document.getElementById("inputMood")//.val();
-                        var quote = [newQuote,newAuthor,newMood];
-                        q.push(quote)
-                        	// console.log(theForm.[0]+[1]+[2]+quote+"data "+document.forms["theForm"]["inputAuthor"].value);
-                            console.log (quote)
-                            console.log(q)
-}
-
-
-
-
-
-
-
- /*  want to store new data permenantly in q 
-                    var newQuotation=inputAuthor+inputMood+inputQuote
-                    onclick=q.push ("newQuotation");</button>
-
-                    var o={
-                    quote="inputQuote", author="inputAuthor", mood="inputMood"
-                    }
-                    
-                    localStorage.setItem("myObject",o;
-                    console.log(localStorage.getItem("myObject"));
-                    JSON.stringify(o);
-                    JSON:
-                    {"quote":"inputquote","author":"inputAuthor","mood":"inputMood"}
-                    */

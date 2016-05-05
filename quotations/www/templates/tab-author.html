@@ -2,8 +2,7 @@
   <ion-content class="padding">
     <h2>Welcome to Quotations App 2.1.0</h2>
     <p>
-  Select quotes based on a list of authors, second child of the array$
-  AuthorAuthor
+  This tab was designed to show a list of all authors and clickable to reveal a list of their quotes
     </p>
    
    <ul>
@@ -22,10 +21,12 @@
          <button class="button button-assertive" onclick="getRandomQuote()">Random Quote</button>
     </li>
     <li>
-    <button class="button button-royal" onclick=alert("getPics")>By Mood </button>
+    <button class="button button-royal" onclick="authorList()">author </button>
     </li>
 </ul>
-
+<!-- Attempted to use various methods to print list of array items to screen; document.write does print but wipes the HTML(buttons+pictures) from the screen, console wont write to screen and getElementById displays in console only -->
+<p id="author">List of Authors</p>
+<script>document.getElementbyId("author").innerHTML=("q[1]");</script>
 
 
 
