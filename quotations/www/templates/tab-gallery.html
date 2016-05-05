@@ -1,36 +1,34 @@
-<<ion-view view-title="Gallery">
+<ion-view view-title="Gallery">
     <ion-panel>
         <ion-content class="padding">
-         <!-- <img id="bkgimg" src="img/aurora2.jpg" alt="aurora"> -->
-        <style> .backgroundImg { background-color:cccccc;background-size:cover; background-image:url("img/aurora.jpg" id="bkgimg");}
+            <img class="bkgimg" src="img/lake.jpg" alt="cherryblossom">
+            <!-- <style> .backgroundImg { background-color:cccccc;background-size:cover; background-image:url("img/aurora.jpg" id="bkgimg");}
             </style>
-       <div class="backgroundImg">
+       <div class="backgroundImg"> -->
             <h2>This tab was to display a gallery of all images</h2>
-            <script>
+            <!--  <script>
             function testText() {
                 document.getElementById("demo").innerHTML = ("Hello World");
             }
-            </script>
-            
+            </script> -->
             <div class="buttons">
-              <ul>
-                 <ul>
-            <li>
-                <button class="button button-balanced" onclick="getRandomImage()">Gallery</button>
-            </li>
-            <li>
-                <button class="button button-energized" onclick="open()">Mail to: </button>
-            </li>
-            <li>
-                <button class="button button-assertive" onclick="getRandomQuote()">Random Quote</button>
-            </li>
-            <li>
-                <button class="button button-royal" onclick="getImage()">Camera </button>
-            </li>
-        </ul>
-            </ul>
+                <ul>
+                    <ul>
+                        <li>
+                            <button class="button button-balanced" onclick="getRandomImage()">Gallery</button>
+                        </li>
+                        <li>
+                            <button class="button button-energized" onclick="open()">Mail to: </button>
+                        </li>
+                        <li>
+                            <button class="button button-assertive" onclick="getRandomQuote()">Random Quote</button>
+                        </li>
+                        <li>
+                            <button class="button button-royal" onclick="getImage()">Camera </button>
+                        </li>
+                    </ul>
+                </ul>
             </div>
-           
         </ion-content>
     </ion-panel>
 </ion-view>

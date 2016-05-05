@@ -74,11 +74,7 @@ var q= [
 ["For death is but a passing phase of Life, A change of dress, a disrobing; A birth into the unborn again; A commencing where we ended; A starting where we stopped to rest; A crossroad of Eternity; A giving up of something, to possess all things.The end of the unreal, the beginning of the real", "Edwin Leibfreed", "reflective"]
 ];
 
-function authorList(){
-for(i=0;i<q.length; i++){
 
-console.log(q[i][1]);
-}}
 
 
 

@@ -1,54 +1,50 @@
 <ion-view view-title="Settings">
-  <ion-content class="padding">
-   <style>.backgroundImg { background-color:cccccc;background-size:cover; background-image:url("img/aurora.jpg");}
-            </style>
-       <div class="backgroundImg">
-    <h2>This Tab was to allow the user to enter their own quotations using a form which would also add their input to the array using javascript in q.js</h2>
-   
-<ul>
-    <ul>
-            <li>
-                <button class="button button-balanced" onclick="getRandomImage()">Gallery</button>
-            </li>
-            <li>
-                <button class="button button-energized" onclick="open()">Mail to: </button>
-            </li>
-            <li>
-                <button class="button button-assertive" onclick="getRandomQuote()">Random Quote</button>
-            </li>
-            <li>
-                <button class="button button-royal" onclick="getImage()">Camera </button>
-            </li>
-        </ul>
-</ul>
-
-
- <form role="form" name="myForm" onsubmit="return setText()">
-            <fieldset>
-                <div class="list">
-                    <label for="author" class="item item-input item-stacked-label">
-                        <span class="input-label">Author</span>
-                        <input id="inputAuthor" name="inputAuthor" type="text" value="Anonymous">
-                    </label>
-                    <label for="mood" class="item item-input item-stacked-label">
-                        <span class="input-label">Mood</span>
-                        <input id="inputMood" name="inputMood" type="text" value="Inspirational">
-                    </label>
-                    <label for="quote" class="item item-input item-stacked-label">
-                        <span class="input-label">Type in your quote</span>
-                        <input id="inputQuote" name="inputQuote" type="text" value="The quuick brown fox jumped over the lazy dogs.">
-                    </label>
-                    <button class="button button-block button-positive" type="submit">Submit</button>
-                </div>
-                <!--close class list div... -->
-            </fieldset>
-        </form>
-
-
-
-
-</div>
-
-  
-  </ion-content>
+    <ion-content class="padding">
+        <style>
+        .backgroundImg {
+            background-color: cccccc;
+            background-size: cover;
+            background-image: url("img/aurora.jpg");
+        }
+        </style>
+        <div class="backgroundImg">
+            <h3>This Tab was to allow the user to enter their own quotations using a form which would also add their input to the array using javascript in q.js .I left the last working image here to give impression of the finished app </h3>
+            <ul>
+                <ul>
+                    <li>
+                        <button class="button button-balanced" onclick="getRandomImage()">Gallery</button>
+                    </li>
+                    <li>
+                        <button class="button button-energized" onclick="open()">Mail to: </button>
+                    </li>
+                    <li>
+                        <button class="button button-assertive" onclick="getRandomQuote()">Random Quote</button>
+                    </li>
+                    <li>
+                        <button class="button button-royal" onclick="getImage()">Camera </button>
+                    </li>
+                </ul>
+            </ul>
+            <form role="form" name="myForm" onsubmit="return setText()">
+                <fieldset>
+                    <div class="list">
+                        <label for="author" class="item item-input item-stacked-label">
+                            <span class="input-label">Author</span>
+                            <input id="inputAuthor" name="inputAuthor" type="text" value="Anonymous">
+                        </label>
+                        <label for="mood" class="item item-input item-stacked-label">
+                            <span class="input-label">Mood</span>
+                            <input id="inputMood" name="inputMood" type="text" value="Inspirational">
+                        </label>
+                        <label for="quote" class="item item-input item-stacked-label">
+                            <span class="input-label">Type in your quote</span>
+                            <input id="inputQuote" name="inputQuote" type="text" value="The quuick brown fox jumped over the lazy dogs.">
+                        </label>
+                        <button class="button button-block button-positive" type="submit">Submit</button>
+                    </div>
+                    <!--close class list div... -->
+                </fieldset>
+            </form>
+        </div>
+    </ion-content>
 </ion-view>

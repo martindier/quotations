@@ -8,17 +8,13 @@ function getRandomImage(imgAr, path) {
     var img = random_images_array[num];
     var imgStr = '<img src="' + path + img + '" alt = "" width="100%" id="bkgimg"> ';
     var imgStr = path + img;
-console.log(imgStr)
-   // document.body.style.backgroundImage = "url(imgStr)";
+    console.log(imgStr)
+        // document.body.style.backgroundImage = "url(imgStr)";
 
-    $("#bkgimg").attr("src", imgStr); 
-    $("#bkgimg").attr("width", "100%");
-    // $("#bkgimg").attr("height", "50%");
+
+
+    //replacing front page image + styling for replacement image
+    $(".bkgimg").attr("src", imgStr);
+    $(".bkgimg").attr("width", "100%");
+    // $(".bkgimg").attr("height", "50%");
 }
-
-
-
-
-
-
-
